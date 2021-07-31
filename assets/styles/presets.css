@@ -1,0 +1,16 @@
+@import url("http://fonts.cdnfonts.com/css/airbnb-cereal-app");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: 'Airbnb Cereal App', sans-serif;
+}
+
+#main {
+  max-width: 612px;
+  min-width: 612px;
+  margin: auto;
+}
+/*# sourceMappingURL=presets.css.map */

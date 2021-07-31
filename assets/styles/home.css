@@ -1,0 +1,88 @@
+@import url("http://fonts.cdnfonts.com/css/airbnb-cereal-app");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: 'Airbnb Cereal App', sans-serif;
+}
+
+#main {
+  max-width: 612px;
+  min-width: 612px;
+  margin: auto;
+}
+
+.hero-section, .hero-section__content-box {
+  min-height: 500px;
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/app-bg-black.png");
+  position: relative;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.hero-section__content-box {
+  padding-top: 40px;
+  min-height: 90%;
+  background-image: url("../images/app-weather-map.png");
+  background-size: contain;
+  background-position: 0px 100px;
+}
+
+.hero-section__content-box--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section__content-box--header .logo {
+  height: 40px;
+}
+
+.hero-section__content-box--header .logo .actual-image {
+  height: inherit;
+}
+
+.hero-section__content-box--header .title {
+  font-weight: 800;
+  font-size: 1.3rem;
+  border-left: 3px solid white;
+  padding-left: 1.4rem;
+  margin-left: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section__content-box--header .title .tm-logo {
+  width: 20px;
+  margin-top: -10px;
+  margin-left: 3px;
+}
+
+.hero-section__content-box--cloud {
+  height: 150px;
+  display: block;
+  margin: 60px auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.hero-section__content-box--cloud .actual-image {
+  height: inherit;
+}
+/*# sourceMappingURL=home.css.map */
