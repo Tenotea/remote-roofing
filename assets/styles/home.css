@@ -85,4 +85,192 @@
 .hero-section__content-box--cloud .actual-image {
   height: inherit;
 }
+
+.body-section-one__content-box--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px auto;
+}
+
+.body-section-one__content-box--header .logo {
+  height: 40px;
+}
+
+.body-section-one__content-box--header .logo .actual-image {
+  height: inherit;
+}
+
+.body-section-one__content-box--header .title {
+  font-weight: 800;
+  font-size: 1.8rem;
+  border-left: 3px solid #075BBD;
+  color: #075BBD;
+  padding-left: 1.4rem;
+  margin-left: 1.4rem;
+}
+
+.body-section-one__content-box--body {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 20px rgba(7, 91, 189, 0.3);
+          box-shadow: 0px 4px 20px rgba(7, 91, 189, 0.3);
+  padding: 100px 0px;
+  width: 95%;
+  margin: 100px auto;
+}
+
+.body-section-one__content-box--body .body-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  grid-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body-section-one__content-box--body .body-item:nth-child(2) {
+  margin-top: -42%;
+}
+
+.body-section-one__content-box--body .body-item:nth-child(3) {
+  margin-top: -42%;
+}
+
+.body-section-one__content-box--body .body-item-graphic {
+  height: 200px;
+}
+
+.body-section-one__content-box--body .body-item-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: -10px;
+}
+
+.body-section-one__content-box--body .body-item-name .item-actual-name {
+  font-weight: 700;
+}
+
+.body-section-one__content-box--body .body-item-name .item-icon {
+  height: 25px;
+}
+
+.body-section-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-gap: 20px;
+  min-height: 400px;
+  margin: 120px auto;
+}
+
+.body-section-two .grid-col-one .iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.body-section-two .grid-col-one .column-image {
+  width: 100%;
+}
+
+.body-section-two .grid-col-two {
+  width: 100%;
+}
+
+.body-section-two .grid-col-two .column-header__number {
+  color: #075BBD;
+  font-weight: 800;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.body-section-two .grid-col-two .column-header__title {
+  font-weight: 800;
+  font-size: 1.7em;
+  margin-bottom: 15px;
+}
+
+.body-section-two .grid-col-two .column-header__caption {
+  color: #595959;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.6em;
+}
+
+.body-section-two .grid-col-two .column-body {
+  width: 100%;
+  margin: 30px auto;
+}
+
+.body-section-two .grid-col-two .column-body__image {
+  width: inherit;
+}
+
+.body-section-two .grid-col-two .column-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+.body-section-two .grid-col-two .column-action .site-logo {
+  height: 20px;
+}
+
+.body-section-two .grid-col-two .column-action .tm-logo {
+  height: 10px;
+  position: absolute;
+  right: -13px;
+  top: 0;
+}
+
+.body-section-two .grid-col-two .column-action .action {
+  position: relative;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #075BBD;
+}
+
+.body-section-two .grid-col-two .column-brand-images .brand-image {
+  height: 30px;
+  margin: 2px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  cursor: pointer;
+  -webkit-transition: 200ms ease-in-out filter;
+  transition: 200ms ease-in-out filter;
+}
+
+.body-section-two .grid-col-two .column-brand-images .brand-image:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
 /*# sourceMappingURL=home.css.map */
