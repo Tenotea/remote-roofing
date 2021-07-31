@@ -15,14 +15,16 @@
 }
 
 .hero-section, .hero-section__content-box {
-  min-height: 500px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../images/app-bg-black.png");
   position: relative;
-  height: 100vh;
   color: #ffffff;
+  padding-bottom: 90px;
 }
 
 .hero-section__content-box {
@@ -84,6 +86,79 @@
 
 .hero-section__content-box--cloud .actual-image {
   height: inherit;
+}
+
+.hero-section__content-box .image-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.hero-section__content-box .image-container img {
+  width: 100%;
+}
+
+.hero-section__content-box .image-container .primary-image {
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scale(1.1) translate(-40%, -40%);
+          transform: scale(1.1) translate(-40%, -40%);
+  z-index: 1;
+  -webkit-transition: 300ms ease-out all;
+  transition: 300ms ease-out all;
+}
+
+.hero-section__content-box .image-container .secondary-images {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+  grid-gap: 70px;
+}
+
+.hero-section__content-box .image-container .secondary-images .primary-image {
+  opacity: 1 !important;
+}
+
+.hero-section__content-box .image-container .secondary-images__shot_2, .hero-section__content-box .image-container .secondary-images__shot_3, .hero-section__content-box .image-container .secondary-images__shot_1 {
+  opacity: 0.6;
+}
+
+.hero-section__content-box .position-trackers {
+  margin-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (12px)[3];
+      grid-template-columns: repeat(3, 12px);
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+.hero-section__content-box .position-trackers .tracker {
+  border-radius: 50%;
+  border: 2px solid white;
+  height: 12px;
+  -webkit-transition: ease-in-out 200ms all;
+  transition: ease-in-out 200ms all;
+  cursor: pointer;
+}
+
+.hero-section__content-box .position-trackers .tracker.in-focus {
+  background-color: white;
 }
 
 .body-section-one__content-box--header {
