@@ -175,8 +175,9 @@
 }
 
 .hero-section__content-box .hero-carousel-body .carousel-body {
-  display: -ms-grid;
-  display: grid;
+  -webkit-animation: fade-in 400ms ease-out 0s 1 alternate forwards;
+          animation: fade-in 400ms ease-out 0s 1 alternate forwards;
+  display: none;
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
   gap: 10px;
@@ -184,6 +185,37 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hero-section__content-box .hero-carousel-body .carousel-body.in-focus {
+  display: -ms-grid;
+  display: grid;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0.4;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0.4;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .hero-section__content-box .hero-carousel-body .carousel-body .carousel-body-grid-image {
@@ -235,9 +267,17 @@
   color: transparent;
 }
 
-.hero-section__content-box .hero-carousel-body .carousel-body .grid-col-one .body-item__title.linear-blue-yellow {
+.hero-section__content-box .hero-carousel-body .carousel-body .grid-col-one .body-item__title.linear-yellow-blue {
   background: -webkit-gradient(linear, right top, left top, color-stop(23.88%, #85E3C1), color-stop(94.39%, #F0E36F));
   background: linear-gradient(270deg, #85E3C1 23.88%, #F0E36F 94.39%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-section__content-box .hero-carousel-body .carousel-body .grid-col-one .body-item__title.linear-blue-blue {
+  background: -webkit-gradient(linear, right top, left top, color-stop(54.13%, #52ACFF), color-stop(94.39%, #7CE0E7));
+  background: linear-gradient(270deg, #52ACFF 54.13%, #7CE0E7 94.39%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
