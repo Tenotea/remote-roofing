@@ -9,7 +9,7 @@
 }
 
 #main {
-  max-width: 612px;
+  width: 100%;
   min-width: 612px;
   margin: auto;
 }
