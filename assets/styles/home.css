@@ -523,6 +523,7 @@
   min-height: 400px;
   margin: 15rem auto;
   max-width: 1300px;
+  min-height: 100vh;
 }
 
 .body-section-two .grid-col-one .iframe {
